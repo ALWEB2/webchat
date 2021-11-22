@@ -39,29 +39,55 @@ function loginForm(){
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        
-        <!-- Hotjar Tracking Code for https://mrechat.000webhostapp.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2697650,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
         <title>MRE CHAT</title>
+        <link rel="icon" type="image/png" href="https://i.ibb.co/RhsNPrX/image.png">
         <meta name="description" content="MRE CHAT" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div style="padding-left:16px">
+  <h2>MRE CHAT</h2>
+  <p>Discord Link:</p> <a href="https://discord.gg/CabuwgH2RX">https://discord.gg/CabuwgH2RX</a>
+</div>
     <?php
     if(!isset($_SESSION['name'])){
         loginForm();
-    }
-    else {
+    } elseif (in_array($_SESSION['name'], array("nigger", "n1gger", "N1gger", "Nigger"))){
+      exit();
+    } else {
     ?>
         <div id="wrapper">
             <div id="menu">

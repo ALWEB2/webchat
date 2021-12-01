@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['name'])){
     $link = $_POST['link'];
-    if (in_array($_SESSION['name'], array("nigger", "n1gger", "N1gger", "Nigger"))){
+    if (in_array($_SESSION['name'], array("Server", "server", "Serveur", "serveur"))){
         exit();
     } elseif (in_array($link, array("nigger", "n1gger", "N1gger", "Nigger"))){
     } else {

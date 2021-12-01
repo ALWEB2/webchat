@@ -85,9 +85,13 @@ body {
     <?php
     if(!isset($_SESSION['name'])){
         loginForm();
-    } elseif (in_array($_SESSION['name'], array("nigger", "n1gger", "N1gger", "Nigger"))){
+    } elseif (in_array($_SESSION['name'], array("Server", "server", "Serveur", "serveur"))){
+    $login_message = "<div class='msgln'><span class='joined-info'>User <b class='user-name-joined'>". $_SESSION['name'] ."</b> has been blacklisted.</span><br></div>";
+    file_put_contents("log.html", $login_message, FILE_APPEND | LOCK_EX);
       exit();
     } else {
+    $login_message = "<div class='msgln'><span class='joined-info'>User <b class='user-name-joined'>". $_SESSION['name'] ."</b> attempted to open chat.</span><br></div>";
+    file_put_contents("log.html", $login_message, FILE_APPEND | LOCK_EX);
     ?>
         <div id="wrapper">
             <div id="menu">

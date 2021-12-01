@@ -103,7 +103,7 @@
     display: flex;
   }
   
-  #menu p.welcome {
+  #menu .welcome {
     flex: 1;
   }
   
@@ -119,17 +119,17 @@
     margin: 0 0 5px 0;
   }
   
-  .msgln span.left-info {
+  .msgln .left-info {
     color: orangered;
   }
   
-  .msgln span.chat-time {
+  .msgln .chat-time {
     color: #666;
     font-size: 60%;
     vertical-align: super;
   }
   
-  .msgln b.user-name, .msgln b.user-name-left {
+  .msgln .user-name, .msgln .user-name-left {
     font-weight: bold;
     background: #546e7a;
     color: white;
@@ -139,6 +139,20 @@
     margin: 0 5px 0 0;
   }
   
-  .msgln b.user-name-left {
+  .msgln .user-name-left {
     background: orangered;
+  }
+  
+  .msgln .user-name-joined {
+    background: green;
+  }
+  
+  .msgln .user-name-joined {
+    font-weight: bold;
+    background: #7CFC00;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
   }

@@ -6,9 +6,11 @@ session_start();
 if (isset($_POST["user"]) && !isset($_SESSION["user"])) {
   // (B1) USERS & PASSWORDS - SET YOUR OWN !
    $users = [
-    "joe" => "123456",
-    "jon" => "654321",
-    "joy" => "987654"
+    "Alec" => "alec456",
+    "Rami" => "rami789",
+    "TwitterKaren" => "GetTheManager",
+    "Domi" => "domi987",
+    "HufflePuff770" => "yourmom789"
   ];
  
   // (B2) CHECK & VERIFY
